@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    list-style: none; 
+    color: var(--black-color);
+  }
+
+:root{
+    /**Warna**/
+    --warnaUtama: #F1F3FF;
+    --warnaLogo: #0D28A6;
+    --warnaTombol: #5CB85F;
+    --warnaTulisan: #000000;
+    --yellow-color: #f9cc00;
+    --red-color: #fa2c5a;
+    
+}
+
+*{
+    box-sizing: border-box !important;
+    
+}
+
+/**------------------------------------NAVBAR------------------------------------**/
+.navbar{
+    background-color: var(--warnaUtama) !important;
+
+}
+.navbar-brand{
+    background-color: var(--warnaLogo);
+    width: 4em;
+    text-align: center;
+    color: var(--warnaTulisan);
+}
+.nav-link{
+    color: var(--warnaTulisan) !important;
+}
+.navbar-toggler-icon{
+    background-color: var(--warnaTulisan);
+}
+.logo {
+    position: relative;
+    width: 6rem;
+    height: 2rem;
+    background: var(--warnaLogo);
+  }
+
+/**------------------------------------HOME------------------------------------**/
+.home{
+    background-color: var(--warnaUtama);
+    height: auto;
+}
+
+.home .container .row {
+    margin-top: -1em;
+
+    /* overflow: hidden; */
+}
+.home .container .row .kotak .btn-home button{
+    background-color: var(--warnaTombol);
+    padding: 0.5em;
+    border-radius: 5px 5px 5px 5px;
+}
+.btn-home button a{
+    padding: 1em;
+}
+.btn-home .sewa{
+    color: var(--warnaUtama);
+    text-decoration: none;
+    text-align: center;
+}
+.home img{
+    position: relative !important;
+    right: 2rem;
+    left: 0.5rem;
+    bottom: 2rem;
+    width: auto;
+ }
+
+.banner-image::before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 70%;
+    bottom: 0;
+    right: 0;
+    background: blue;
+    border-radius: 50px 0 0 0;
+  }
+
+/**-----------------------------------WHY US-------------------------------------**/
+
+.whyUs .row{
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+}
+.whyUs .row .bungkus{
+    padding: 1.5em;
+    width: 22%;
+    align-items: center;
+    border-radius: 15px;
+    border: 2px solid grey;
+    box-shadow: 5px 5px  #888888;
+    
+}
+.whyUs .container .row .col h1{
+    padding-top: 0.5em;
+}
+.whyUs .container .row .col p{
+
+}
+
+.whyUs .row .bungkus h1{
+    font-size: 20px;
+}
+.whyUs .row .bungkus p{
+    font-size: 15px;
+    
+}
+
+.whyUs .row .bungkus i{
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--warnaUtama);
+    margin-bottom: 0.75rem;
+}
+
+.whyUs .row .bungkus:nth-child(1) i{
+    background: #f9cc00;
+}
+.whyUs .row .bungkus:nth-child(2) i{
+    background: #fa2c5a;
+}
+.whyUs .row .bungkus:nth-child(3) i{
+    background: #0D28A6;
+}
+.whyUs .row .bungkus:nth-child(4) i{
+    background: #5CB85F;
+}
+
+
+/**----------------------------------TESTIMONI---------------------------------------**/
+
+.testimoni .container .row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1em;
+    padding-bottom: 0;
+}
+.testimoni .container .row{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1em;
+}
+.testimoni .container .row .col h1{
+    display: flex;
+    justify-content: center;
+}
+.testimoni .container .row .col p{
+    display: flex;
+    justify-content: center;
+}
+
+/**----------------------------TESTIMONI CAROUSEL----------------------------------**/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.tag{
+    text-align: center;
+    font-size: 1.1rem
+}
+.card{
+    height: 320px;
+    padding: 10px 20px;
+    border: 2px solid grey;
+    box-shadow: -1px 3px 5px #a7a7a7;
+}
+.testimonial{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    font-weight: 500
+}
+.active-star{
+    color: #FBC02D;
+    margin-bottom: 8px
+}
+.active-star:hover{
+    color: #F9A825;
+    cursor: pointer
+}
+.profile{
+    padding-top: 10px
+}
+.name{
+    font-weight: 700
+}
+.designation{
+    font-size: 0.84rem;
+    font-weight: 600
+}
+.owl-carousel{
+    margin-bottom: 15px
+}
+.owl-carousel .owl-stage-outer{
+    padding: 40px 10px;
+    height: 380px
+}
+.owl-carousel .owl-item img{
+    width: 45px !important;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover
+}
+.owl-theme .owl-nav [class*='owl-']{
+    border-radius: 50% !important;
+    background: inherit !important;
+    border: 3px solid #bbb;
+    color: #bbb !important
+}
+.owl-theme .owl-nav [class*='owl-']:hover{
+    border: 3px solid var(--warnaTombol);
+    color: var(--warnaTombol) !important
+}
+
+ /**-------------------------------------SEWA-MOBIL-----------------------------------**/
+
+ .sewa-mobil .container .row{
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+    text-align: center;
+    color: var(--warnaUtama);
+    background-color: var(--warnaLogo);
+ }
+ .sewa-mobil .container .row .col button{
+    border: 2px solid black;
+    margin-top: 2em;
+    padding: 0.5em;
+    background-color: var(--warnaTombol);
+    border-radius: 3px 3px 3px 3px;
+ }
+ .sewa-mobil .container .row .col button a{
+    text-decoration: none;
+    padding: 2em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    color: var(--warnaUtama)
+ }
+ /**-------------------FAQ---------------------**/
+.faq{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+} 
+.faq .container .row{
+    display: flex;
+    justify-content: center;
+}
+.faq .container .row .col h3{
+    margin-top: 2em;
+}
+.faq .container .row .col p{
+    margin-top: 1em;
+}
+.accordion-item{
+    border: 2px solid grey;
+    border-radius: 3px 3px 3px 3px;
+}
+
+ 
+/**---------------------------------------FOOTER-----------------------------------**/
+.kolom .paragrap2{
+    margin-left:3em;
+}
+.footer .container .row .kolom i{
+    padding: 0.18em;
+    background-color: var(--warnaLogo);
+    color: var(--warnaUtama);
+    border-radius: 50%;
+
+}
+.kolom .paragrap4{
+    margin-left: 2em;
+}
+
+.kolom .logo {
+    margin-left: 2em;
+    position: relative;
+    width: 6rem;
+    height: 2rem;
+    background: var(--warnaLogo);
+  }
+
+
+
+
+ /**-------------------------------------MEDIA QUERY-------------------------------**/ 
+ /**Tampilan di atas 768px**/
+@media screen and (min-width: 768px){
+    .navbar-collapse{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+    .home{
+        font: 400px;
+        height: 70vh;
+        padding-top: 8rem;
+        overflow: hidden;
+    }
+
+    .service{
+        height: 70vh;
+
+    }
+    .service img{
+        position: relative;
+        font-size: 30px;
+        height: 80%;
+    }
+    .container2{
+        border: 2px solid black;
+    }
+    /* .deskripsi{
+        position: relative;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      } */
+      ul li i {
+        font-size: 0.65rem;
+        background: var(--warnaLogo);
+        padding: 0.5rem;
+        border-radius: 50%;
+        color: var(--warnaUtama);
+        margin-right: 0.75rem;
+      }
+}
+
+.testimonial-slider-wrap {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
+  
+  .testimonial-slider-item {
+    position: relative;
+    width: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .slider-item {
+    position: relative;
+    width: 32%;
+    height: 50vh;
+    background: lightblue;
+    display: flex;
+    align-items: center;
+  }
+  
+  .image-slider {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 2rem;
+    font-size: 1rem;
+  }
+  
+  .slider-item .review {
+    position: relative;
+    width: 70%;
+  }
+  
+  .slider-item .review .star {
+    margin-bottom: 0.75rem;
+  }
+  
+  .slider-item .review .star i {
+    color: yellow;
+  }
+  
+  .slider-item .review span {
+    font-weight: 600;
+  }
+  
+  .slider-item .review p {
+    margin-top: 0.75rem;
+  }
+  
+  .testimonial-slider-button {
+    position: relative;
+    margin-top: 1rem;
+    width: 6rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn-slider {
+    position: relative;
+    width: fit-content;
+    padding: 0.5rem 0.75rem;
+    border-radius: 50%;
+    border: 1px solid gray;
+  }
+  
+  .btn-slider:hover {
+    background: green;
+  }
+  
+  .btn-slider:hover i {
+    color: white;
+  }
+
+
+/**Tampilan di bawah 1000px**/
+@media screen and (max-width: 1000px){
+    .home img{
+        position: relative !important;
+        right: 3rem;
+        left: 1rem;
+        top: 1rem;
+        bottom: 2rem;
+        width: auto;
+     }
+    .whyUs{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .whyUs .row .col{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .whyUs .row .bungkus{
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid black;
+        padding: 1em;
+        margin-bottom: 2em;
+        width: 80%;
+        align-items: center;
+        border-radius: 15px;
+        box-shadow: 5px 5px  #888888;
+        margin-top: 0;
+    }
+
+    .whyUs .container .row h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .whyUs .container .row p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimoni .container .row h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimoni .container .row p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sewa-mobil{
+        display: flex;
+        justify-content: center;
+    }
+    .sewa-mobil .container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h3, p{
+        margin-top: 5px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .accordion-item{
+        margin-top: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .kolom .paragrap2{
+        margin-left:3em;
+    }
+    .footer .container .row .kolom i{
+        padding: 0.18em;
+        background-color: var(--warnaLogo);
+        color: var(--warnaUtama);
+        border-radius: 50%;
+    
+    }
+    .kolom .paragrap4{
+        margin-left: 2em;
+    }
+    
+    .kolom .logo {
+        margin-left: 2em;
+        position: relative;
+        width: 6rem;
+        height: 2rem;
+        background: var(--warnaLogo);
+      }
+    
+}
+
+
+@media(max-width: 575.5px){
+    .container{
+        margin: 0px;padding: 20px
+    }
+}
